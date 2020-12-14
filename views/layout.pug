@@ -7,7 +7,7 @@ html
     nav
       a(href="/") HOME
       a(href=`/services/${(new Date).getDay()}/${(new Date).getHours()}`) SERVICES
-      a(href="/contact") CONTACT
+      a(href=`/contact/${(new Date).getDay()}/${(new Date).getHours()}`) CONTACT
       div#indicator
     block content
     block services
