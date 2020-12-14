@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title checkpoint | express js
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav
+      a(href="/") HOME
+      a(href=`/services/${(new Date).getDay()}/${(new Date).getHours()}`) SERVICES
+      a(href="/contact") CONTACT
+      div#indicator
+    block content
+    block services
+    block contact

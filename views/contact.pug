@@ -1,0 +1,15 @@
+extends layout
+
+block contact
+    div.container
+        form(action="")
+            label(for="fname") first name
+            input(type="text")
+
+            label(for="lname") last name
+            input(type="text")
+
+            label(for="subject") Subject
+            textarea#subject(name="", cols="30", rows="10", placeholder='write something')
+
+            button Submit
